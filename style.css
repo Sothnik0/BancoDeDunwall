@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./images/theFallOfDunwall.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Van Helsing', serif;
+    font-size: larger;
+    color: white;
+}
+
+/*FOR JS*/
+.btn.clicked {
+    background-color: #f7f7f7bb;
+    border: solid #f7f7f7bb 1px;
+
+    transition: 0.5s;
+}
+/*FOR JS*/
+
+p {
+    font-size: 1.8rem;
+}
+
+#nav, #nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+}
+
+#userInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container{
+    width: 100%;
+    height: 40vh;
+
+    margin-top: 5rem;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#acount-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#card-container{
+    width: 510px;
+    height: 200px;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    background-color: #141414d2;
+}
+
+#geting-Side{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+    height: 90%;
+}
+
+#in-card, #out-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 550px;
+    height: 80px;
+
+    border-radius: 12px;
+
+    padding: 10px;
+
+    background-color: #141414d2;
+}
+
+#new-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#card-user{
+    width: 510px;
+    height: 360px;
+
+    border-radius: 1rem;
+
+    background-image: url(./images/survivor.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transition: 0.5s;
+}
+
+#card-user:hover{
+    transition: 0.5s;
+    background-position: center;
+}
+
+#card-title{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    background-color: #141414d2;
+    padding: 10px;
+
+    border-radius: 12px 12px 0 0;
+
+}
+
+#last-trans{
+    width: 550px;
+    height: 360px;
+
+    border-radius: 12px;
+    padding: 10px;
+
+    background-color: #141414d2;
+}
+
+#overall-mini-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    margin-top: 5rem;
+}
+
+#mini-card-upper{
+    height: 150px;
+    width: 320px;
+
+    margin-right: 6%;
+
+    background-color: #141414d2;
+
+    border-radius: 12px;
+    padding: 20px;
+}
+
+#mini-card-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.mini-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    margin-left: 10px;
+
+    border-radius: 12px;
+    border: solid white 1px;
+
+    width: 100px;
+    height: 100px;
+
+    transition: 0.5s;
+
+    background-color: #141414d2;
+}
+
+.mini-card:hover{
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.842);
+}
+
+#title-card{
+    height: 80px;
+    width: 350px;
+    background-color: #141414d2;
+}
+
+#transf-card{
+    position: fixed;
+    top: 33%;
+    left: 33%;
+
+    width: 550px;
+    height: 370px;
+
+    visibility: hidden;
+
+    border-radius: 12px;
+    padding: 12px;
+
+    background-color: #141414d2;
+}
+
+#form-card{
+    width: 530px;
+    height: 175px;
+
+    padding: 10px;
+    border-radius: 12px;
+
+    background-color: #141414d2;
+}
+
+.btn{
+    font-family: 'Van Helsing', serif;
+    font-size: 1.5rem;
+    width: 150px;
+    padding: 2px;
+    margin-left: 10px;
+
+    border-radius: 12px;
+    border: solid white 1px;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input {
+    width: 200px;
+    padding: 4px;
+}
+
+#footer {
+    height: 100px;
+    width: 100%;
+    
+    margin-top: 5rem;
+
+    background-color: #141414d2;
+}
+
+#foot-container {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#card-cont{
+    height: 110px;
+    width: 510px;
+    padding: 20px;
+
+    margin-top: 4px;
+
+    background-color: #141414d2;
+
+    border-radius: 12px;
+}
+
+#card-for-info, #card-for-value{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.minus{
+    font-size: 1.2rem;
+}
+
+#mother {
+    max-height: 300px; 
+    overflow-y: auto;
+    overflow-x: hidden;  
+    padding: 10px;    
+    background-color: #141414d2; 
+    border-radius: 12px; 
+}
+
+
+@font-face {
+    font-family: 'Van Helsing';
+    src: url('./fonts/Van\ Helsing.ttf') format('truetype');
+  }

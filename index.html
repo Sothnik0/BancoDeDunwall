@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/theMark.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Banco de Dunwall</title>
+</head>
+<body>
+    <header id="nav">
+        <nav id="nav-container">
+            <div id="userInfo">
+                <img src="./images/TheMask.jpeg" style="filter: grayscale(1); padding: 10px;" height="80" width="80" alt="">
+                <p>Seja bem vindo user</p>
+            </div>
+            <h1 style="margin-right: 10px;">O Banco de Dunwall</h1>
+        </nav>
+    </header>
+    <main id="main-container">
+        <section id="acount-container">
+            <div id="card-container">
+                <p>Conta</p>
+                <div id="geting-Side">
+                    <p id="getMoney">R$ 0.00</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="in-out-container">
+                <div id="in-card">
+                    <p>Entradas</p>
+                    <p id="In">R$ 0.00</p>
+                </div>
+                <div style="margin-top: 18px;" id="out-card">
+                    <p>Saidas</p>
+                    <p id="Out">R$ 0.00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+        <section id="new-container">
+            <div id="card-user">
+                <div id="card-title">
+                    <h1>Feito para cidadãos de Dunwall</h1>
+                </div>
+            </div>
+            
+            <div id="last-trans">
+                <h1>Últimas transações</h1>
+                <div>
+                    <div id="mother"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="overall-mini-card">
+        <div id="mini-card-upper">
+            <h1>Escolhas:</h1>
+            <div id="mini-card-container">
+                <div id="pix" class="mini-card">
+                    <img  src="./images/PIX.png" alt="" srcset="">
+                </div>
+                <div class="mini-card">
+                    <img src="./images/Money.png" alt="" srcset="">
+                </div>
+                <div class="mini-card">
+                    <img src="./images/uper.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="title-card" style="display: flex; justify-content: center; align-items: center; border-radius: 12px;">
+            <h1><a style="color: white; text-decoration: none;" target="_blank" href="https://dishonored.fandom.com/wiki/The_Outsider">The outsider walks among us</a></h1>
+        </div>
+    </section>
+    <footer id="footer">
+        <div id="foot-container">
+            <p style="margin-left: 10px;">O Banco de Dunwall</p>
+            <p style="margin-right: 10px;"><a style="color: white; text-decoration: none;" target="_blank" href="https://dishonored.fandom.com/wiki/Dunwall">Sobre nós</a></p>
+        </div>
+    </footer>
+    <section id="transf-card">
+        <div>
+            <p style="margin-left: 10px;">Área do pix</p>
+            <div style="display: flex; justify-content: end;">
+                <p style="margin-right: 10px; font-size: 1.5rem; cursor: pointer;" onclick="closeTab()">Checar transações</p>
+            </div>
+            <div id="form-card">
+                <div style="display: flex; justify-content: center; margin-top: 10px;">
+                    <button class="btn">Receber</button>
+                    <button class="btn">Transferir</button>
+                </div>
+                <br>
+                <div>
+                    <form action="">
+                        <label> Chave Pix <br>
+                            <input id="getKey" type="text" name="" required>
+                        </label><br><br>
+                        <label> Valor R$ <br>
+                            <input id="getNewMoney" type="number" name="" required>
+                        </label><br><br>
+                        <div style="display: flex; justify-content: center;">
+                            <p>Todos os campos devem ser preenchidos</p>
+                            <p style="font-size: 1.2rem; color: crimson;" id="error"></p>
+                        </div>
+                        <br>
+                        <div style="display: flex; justify-content: center;">
+                            <input class="btn" type="submit" value="Transferir">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
